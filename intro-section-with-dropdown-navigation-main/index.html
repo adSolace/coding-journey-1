@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-left">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <ul class="nav-items">
+          <li>
+            <a href="#"
+              >Features <img src="./images/icon-arrow-down.svg" alt=""
+            /></a>
+            <div class="drop-down">
+              <div class="dd">
+                <img src="./images/icon-todo.svg" alt="" />
+                <a href="">Todo List</a>
+              </div>
+              <div class="dd">
+                <img src="./images/icon-calendar.svg" alt="" />
+                <a href="">Calendar</a>
+              </div>
+              <div class="dd">
+                <img src="./images/icon-reminders.svg" alt="" />
+                <a href="">Remainders</a>
+              </div>
+              <div class="dd">
+                <img src="./images/icon-planning.svg" alt="" />
+                <a href="">Planning</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              >Company<img src="./images/icon-arrow-down.svg" alt=""
+            /></a>
+            <div class="dropdown">
+              <ul class="history">
+                <li><a href="">History</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-item">
+          <li><a href="#">Login</a></li>
+          <li><a href="#" class="register">Register</a></li>
+        </ul>
+        <div class="menu">
+          <img src="./images/icon-menu.svg" alt="" />
+        </div>
+      </div>
+    </nav>
+    <!-- end of nav section -->
+    <!-- menu display -->
+    <div class="menu-display">
+      <div class="overlay">
+        <ul class="menu-items">
+          <div class="close-menu">
+            <img src="./images/icon-close-menu.svg" alt="" />
+          </div>
+          <li>
+            <a href="#"
+              >Features <img src="./images/icon-arrow-down.svg" alt=""
+            /></a>
+            <div class="expand">
+              <div class="dd">
+                <img src="./images/icon-todo.svg" alt="" />
+                <a href="">Todo List</a>
+              </div>
+              <div class="dd">
+                <img src="./images/icon-calendar.svg" alt="" />
+                <a href="">Calendar</a>
+              </div>
+              <div class="dd">
+                <img src="./images/icon-reminders.svg" alt="" />
+                <a href="">Remainders</a>
+              </div>
+              <div class="dd">
+                <img src="./images/icon-planning.svg" alt="" />
+                <a href="">Planning</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              >Company<img src="./images/icon-arrow-down.svg" alt=""
+            /></a>
+            <div class="expand">
+              <ul class="history">
+                <li><a href="">History</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Blog</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">About</a></li>
+          <ul class="menu-login">
+            <li><a href="#">Login</a></li>
+            <li><a href="#" class="register">Register</a></li>
+          </ul>
+        </ul>
+      </div>
+    </div>
+    <!-- end of menu display -->
+
+    <section class="hero">
+      <div class="hero-content">
+        <div class="h-left">
+          <h1 class="title">
+            Make <br />
+            remote work
+          </h1>
+          <p class="text">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="btn">Learn more</button>
+          <div class="h-logo">
+            <img src="./images/client-databiz.svg" alt="" />
+            <img src="./images/client-audiophile.svg" alt="" />
+            <img src="./images/client-meet.svg" alt="" />
+            <img src="./images/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <div class="h-right">
+          <img
+            src="./images/image-hero-desktop.png"
+            class="h-right-sub1"
+            alt=""
+          />
+          <div class="h-right-sub2">
+            <img src="./images/image-hero-mobile.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Olushola Adeosun</a>.
+    </div>
+    <!-- javascript -->
+    <script src="./app.js"></script>
+  </body>
+</html>
